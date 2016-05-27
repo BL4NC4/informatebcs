@@ -1,0 +1,53 @@
+.primary {
+	background-color: #f70000;
+}
+
+.secondary {
+	background-color: #222222;
+}
+
+.third {
+	background-color: #53ff84;
+}
+
+.white {
+color: white;
+}
+
+.red {
+	color: #bb0000;
+}
+
+.yellow {
+	color:#fffc00;
+}
+
+
+
+@media (min-width:1200px){.container-fluid{width:1142px}}
+
+@media (max-width:768px){
+	.note {
+	display: block;
+    margin-bottom: 0.5rem;
+	}
+	.mobile {
+	padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+	}
+	
+	figure.post-new figcaption {
+		padding: 0 18px;
+	}
+	figure.post-new span {
+		font-size: 10px;
+	}
+	figure.post-new h2, figure.post-new span, figure.post-new .primary.white h4 {
+		font-size: 11px;
+	}
+	h4.media-heading {
+		font-size: 12px;
+	}
+	}}

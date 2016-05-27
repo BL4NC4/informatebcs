@@ -1,0 +1,85 @@
+/*general*/
+body {
+font-family: 'PT Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'PT Sans', sans-serif;
+	font-weight: bold;
+	color: #000000;
+}
+
+li.active a {
+	background: none !important;
+}
+
+a:focus, a:hover {
+    color: #CECECE;
+    text-decoration: none;
+    }
+
+section {
+  overflow: hidden;
+}
+
+.alert-danger, .navbar-default {
+	background-color: transparent!important;
+	border: 0!important;
+}
+
+.well, .alert {
+	margin-bottom: 0;
+	}
+	.well {
+	border: 0;
+	}
+	.well-sm {
+	border-radius: 0;	
+	}
+
+.center {
+	margin: 0 auto;
+}
+
+.separacion {
+	padding: 3rem 0;
+}
+
+.bottom {
+	margin: 2rem 0;
+}
+
+.pie {
+	padding: 2rem;
+	}
+	.pie-sedesol {
+		font-size: 24px;
+	}
+
+h2.title {
+	margin-top: 0;
+	text-transform: uppercase;
+	font-size: 30px;
+}
+
+article a {
+	display: flex;
+}
+
+h4.media-heading  {
+	padding: 0.5rem;
+    display: inherit;
+    border-radius: 11px;
+	}
+	.media-body p {
+	 margin: 0.8rem 0 0;
+	}
+
+.note {
+	padding: 2rem;
+	text-transform: uppercase;
+}
+
+.bg-body {
+	background: url(../../assets/img/bg-body.png) repeat;
+}
