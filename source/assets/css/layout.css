@@ -20,6 +20,11 @@ a:focus, a:hover {
 
 section {
   overflow: hidden;
+  margin-bottom: 3rem;
+}
+
+.navbar-header button {
+	background-color: #222222;
 }
 
 .alert-danger, .navbar-default {
@@ -41,12 +46,8 @@ section {
 	margin: 0 auto;
 }
 
-.separacion {
-	padding: 3rem 0;
-}
-
 .bottom {
-	margin: 2rem 0;
+	margin: 3rem 0;
 }
 
 .pie {
@@ -66,15 +67,6 @@ article a {
 	display: flex;
 }
 
-h4.media-heading  {
-	padding: 0.5rem;
-    display: inherit;
-    border-radius: 11px;
-	}
-	.media-body p {
-	 margin: 0.8rem 0 0;
-	}
-
 .note {
 	padding: 2rem;
 	text-transform: uppercase;
@@ -82,4 +74,38 @@ h4.media-heading  {
 
 .bg-body {
 	background: url(../../assets/img/bg-body.png) repeat;
+}
+
+@media (max-width:360px){
+	.bottom {
+		margin: 0;
+	}
+	figure.post-new {
+		margin-bottom: 2rem;
+	}
+	section.post-new {
+		margin-bottom: 0;
+	}
+	.fotos-reportajes {
+		margin-bottom: 2rem;
+	}
+}
+
+@media (max-width:768px){
+	.note {
+	display: block;
+    margin-bottom: 0.5rem;
+	}
+	.mobile {
+	padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+	}
+}
+
+@media (min-width:1200px){
+	.container-fluid { 
+		width:1142px;
+	}
 }

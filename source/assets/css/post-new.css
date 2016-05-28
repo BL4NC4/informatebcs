@@ -17,7 +17,7 @@ figure.post-new * {
   transition: all 0.6s ease;
 }
 figure.post-new img {
-  opacity: 0.7;
+  opacity: 0.9;
   width: 100%;
 }
 figure.post-new :after {
@@ -41,7 +41,7 @@ figure.post-new figcaption {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-figure.post-new h2,
+figure.post-new p,
 figure.post-new span, figure.post-new .primary.white h4 {
   margin: 0;
   width: auto;
@@ -72,4 +72,69 @@ figure.post-new:hover:after, figure.post-new:hover:after {
 a figure.post-new:hover {
   background-color: rgba(20, 22, 27, 0.9);
 }
+
+.grad_dark {
+    background: #0A0A0A;
+    background: -moz-linear-gradient(-45deg, #c5deea 0%, #8abbd7 31%, #066dab 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#1A1B1B), color-stop(31%,#1D1D1D), color-stop(100%,#232323));
+    background: -webkit-linear-gradient(-45deg, #181819 0%,#0C0C0C 31%,#292828 100%);
+    background: -o-linear-gradient(-45deg, #c5deea 0%,#8abbd7 31%,#066dab 100%);
+    background: -ms-linear-gradient(-45deg, #c5deea 0%,#8abbd7 31%,#066dab 100%);
+    background: linear-gradient(173deg, rgba(255, 252, 252, 0.65) 56%,#191819 66%,#000000 136%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5deea', endColorstr='#066dab',GradientType=1 );
+}
+
+.title-post-new {
+  text-transform: capitalize;
+  margin-bottom: 5px;
+  text-shadow: 0px 2px 12px #252424;
+}
+
+figure.post-new h1.title-post-new {
+  font-size: 34px;
+  }
+
+figure.post-new h2.title-post-new {
+  font-size: 22px;
+ }
+
+.media-heading {
+    margin-top: 0.5rem;
+  }
+.media-body p {
+   margin: 0.8rem 0 0;
+   padding: 0.5rem;
+   display: inherit;
+   border-radius: 11px;
+  }
+
+h2.media-heading {
+  font-size: 16px;
+}
+
+@media (max-width:768px){ 
+
+.title-post-new {
+  margin-bottom: -15px;
+  font-size: 16px!important;
+}
+
+figure.post-new figcaption {
+    padding: 0 18px;
+  }
+  figure.post-new span {
+    font-size: 10px;
+  }
+
+}
+
+@media (max-width:1024px){
+  .title-post-new {
+    font-size: 16px!important;
+   
+  }
+  }
+
+
+
 
