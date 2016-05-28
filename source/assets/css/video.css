@@ -1,0 +1,27 @@
+.media-heading {
+    margin-top: 0.5rem;
+  }
+.media-body p {
+   margin: 0.8rem 0 0;
+   padding: 0 1rem;
+   display: inherit;
+   border-radius: 11px;
+  }
+
+h2.media-heading {
+  font-size: 16px;
+  color: #222222;
+  font-weight: lighter;
+}
+
+@media (max-width:667px){
+  .media {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width:768px){ 
+  h2.media-heading {
+    font-size: 14px;
+  }
+  }

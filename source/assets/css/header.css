@@ -1,3 +1,7 @@
+.nav>li>a {
+	padding: 10px 12px;
+}
+
 .brand {
 	padding:  3rem;
 }

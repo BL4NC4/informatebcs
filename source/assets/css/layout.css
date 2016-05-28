@@ -1,12 +1,14 @@
 /*general*/
 body {
 font-family: 'PT Sans', sans-serif;
+font-size: 16px;
 }
 
 h1, h2, h3, h4, h5 {
 	font-family: 'PT Sans', sans-serif;
 	font-weight: bold;
 	color: #000000;
+	margin-top: 8px;
 }
 
 li.active a {
@@ -60,7 +62,7 @@ section {
 h2.title {
 	margin-top: 0;
 	text-transform: uppercase;
-	font-size: 30px;
+	font-size: 44px;
 }
 
 article a {
@@ -76,20 +78,14 @@ article a {
 	background: url(../../assets/img/bg-body.png) repeat;
 }
 
-@media (max-width:360px){
-	.bottom {
-		margin: 0;
-	}
-	figure.post-new {
-		margin-bottom: 2rem;
-	}
-	section.post-new {
-		margin-bottom: 0;
-	}
-	.fotos-reportajes {
-		margin-bottom: 2rem;
-	}
+
+@media (max-width:667px){
+  h2.title {
+    font-size: 38px;
+  }
 }
+
+
 
 @media (max-width:768px){
 	.note {
@@ -102,6 +98,10 @@ article a {
     margin-right: auto;
     margin-left: auto;
 	}
+.close {
+	padding: 0.4rem 1rem !important;
+}
+
 }
 
 @media (min-width:1200px){

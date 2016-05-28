@@ -6,10 +6,14 @@ figure.post-new {
   position: relative;
   display: inline-block;
   overflow: hidden;
-  background-color: #000000;
+  background: -moz-linear-gradient(168deg, rgba(224,227,229,0) 0%,rgba(0,0,0,0.45) 40%,rgba(0,0,0,1) 67%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(168deg, rgba(224,227,229,0) 0%,rgba(0,0,0,0.45) 40%,rgba(0,0,0,1) 67%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(168deg, rgba(224,227,229,0) 0%,rgba(0,0,0,0.45) 40%,rgba(0,0,0,1) 67%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00e0e3e5', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
   color: #ffffff;
   text-align: left;
   width: 100%;
+  
 }
 figure.post-new * {
   box-sizing: border-box;
@@ -17,7 +21,7 @@ figure.post-new * {
   transition: all 0.6s ease;
 }
 figure.post-new img {
-  opacity: 0.9;
+  opacity: 0.8;
   width: 100%;
 }
 figure.post-new :after {
@@ -33,7 +37,7 @@ figure.post-new :after {
 figure.post-new figcaption {
   position: absolute;
   vertical-align: text-bottom;
-  bottom: 0;
+  bottom: -3rem;
   left: 0;
   width: 100%;
   padding: 0 30px;
@@ -46,7 +50,7 @@ figure.post-new span, figure.post-new .primary.white h4 {
   margin: 0;
   width: auto;
   font-size: 14px;
-  padding: 0.6rem;
+  padding: 0.2rem 0.5rem;
   border-radius: 9px;
   display: initial;
 }
@@ -56,10 +60,6 @@ figure.post-new span {
   text-transform: uppercase;
   z-index: 1;
   padding: 0;
-}
-figure.post-new span p {
-  padding-top: 1rem;
-  text-transform: initial;
 }
 figure.post-new:hover img {
   -webkit-transform: scale(1.2);
@@ -71,17 +71,6 @@ figure.post-new:hover:after, figure.post-new:hover:after {
 }
 a figure.post-new:hover {
   background-color: rgba(20, 22, 27, 0.9);
-}
-
-.grad_dark {
-    background: #0A0A0A;
-    background: -moz-linear-gradient(-45deg, #c5deea 0%, #8abbd7 31%, #066dab 100%);
-    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#1A1B1B), color-stop(31%,#1D1D1D), color-stop(100%,#232323));
-    background: -webkit-linear-gradient(-45deg, #181819 0%,#0C0C0C 31%,#292828 100%);
-    background: -o-linear-gradient(-45deg, #c5deea 0%,#8abbd7 31%,#066dab 100%);
-    background: -ms-linear-gradient(-45deg, #c5deea 0%,#8abbd7 31%,#066dab 100%);
-    background: linear-gradient(173deg, rgba(255, 252, 252, 0.65) 56%,#191819 66%,#000000 136%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5deea', endColorstr='#066dab',GradientType=1 );
 }
 
 .title-post-new {
@@ -98,19 +87,25 @@ figure.post-new h2.title-post-new {
   font-size: 22px;
  }
 
-.media-heading {
-    margin-top: 0.5rem;
-  }
-.media-body p {
-   margin: 0.8rem 0 0;
-   padding: 0.5rem;
-   display: inherit;
-   border-radius: 11px;
-  }
 
-h2.media-heading {
-  font-size: 16px;
+@media (max-width:667px){
+  .bottom {
+    margin: 0!important;
+  }
+  figure.post-new {
+    margin-bottom: 2rem;
+  }
+  section.post-new {
+    margin-bottom: 0;
+  }
+  .fotos-reportajes {
+    margin-bottom: 2rem;
+  }
+  figure.post-new figcaption {
+    bottom: 1rem!important;
+  }
 }
+
 
 @media (max-width:768px){ 
 
@@ -125,13 +120,28 @@ figure.post-new figcaption {
   figure.post-new span {
     font-size: 10px;
   }
+  figure.post-new figcaption {
+    bottom: -1rem;
+  }
+  figure.post-new p, figure.post-new span, figure.post-new .primary.white h4 {
+    font-size: 12px;
+  }
 
 }
 
-@media (max-width:1024px){
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1023px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
   .title-post-new {
     font-size: 16px!important;
-   
+}
+
+
+@media (max-width:1024px){
+  figure.post-new figcaption {
+    bottom: -5rem;
   }
   }
 
